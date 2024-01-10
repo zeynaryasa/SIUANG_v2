@@ -39,4 +39,4 @@ untuk menambahkan beberapa fitur keamanan sederhana.
 - Lokal server yang author gunakan adalah MAMP, jika menggunakan lokal server yang lain seperti XAMPP,
   lakukan konfigurasi untuk koneksi ke database pada file Database.php dan Keuangan.php pada folder func/
 
-# Author : I Kadek Naryasa
+# Developer : I Kadek Naryasa
