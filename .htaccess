@@ -1,0 +1,28 @@
+
+  Options -Indexes
+  RewriteEngine on
+  RewriteCond %{REQUEST_FILENAME} !-d 
+  RewriteCond %{REQUEST_FILENAME}.php -f 
+  RewriteRule ^(.*)$ $1.php
+
+  RewriteRule ^index$ index 
+  RewriteRule ^admin$ views/V_administrator
+  RewriteRule ^home$ views/index
+  RewriteRule ^pemasukan$ views/V_pemasukan
+  RewriteRule ^pengeluaran$ views/V_pengeluaran
+
+  RewriteRule ^insertAdmin$ views/V_insertAdmin
+  RewriteRule ^insertPemasukan$ views/V_insertPemasukan
+  RewriteRule ^insertPengeluaran$ views/V_insertPengeluaran
+
+  RewriteRule ^editAdmin$ views/V_editAdmin
+  RewriteRule ^editPemasukan$ views/V_editPemasukan
+  RewriteRule ^editPengeluaran$ views/V_editPengeluaran
+
+  RewriteRule ^ConAdmin$ func/ConAdmin
+  RewriteRule ^login$ func/Login
+  RewriteRule ^ConPemasukan$ func/ConPemasukan 
+  RewriteRule ^ConPengeluaran$ func/ConPengeluaran
+  
+  RewriteRule ^logout$ func/Login?logout=true
+  
